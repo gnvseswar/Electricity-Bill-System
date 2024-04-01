@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int units;
+	int i;
+    float total_bill;
+   
+    printf("\n\n\t\t WELLCOME TO ELECTRTICITY DEPARTMENT\n\n");
+
+    printf("\t  ELECTRICITY BILL FOR HOUSEHOLDS (Rates/Unit)\n\n");
+
+    for(i=0;i<70;i++)
+	    printf("=");
+	
+    printf("\n\tUpto 20 Units  = inr.4/Unit |\n\n");
+
+    printf("\t21 To 30 Units   = inr.8/Unit |\n\n");
+
+    printf("\t31 To 50 Units   = inr.9/Unit |\n\n");
+
+    printf("\t51 To 150 Units  = inr.11/Unit |\n\n");
+
+    printf("\t151 To 250 Units = inr.13/Unit |\n\n");
+
+    printf("\t251 To 400 Units = inr.14/Unit |\n\n");
+
+    printf("\t400+ Units = inr.15/Unit |\n\n");
+	for(i=0;i<70;i++)
+		printf("=");
+
+    printf("\nPlease Enter Your Total Units Consumed : \n\n"); 
+
+       scanf("%d", & units);
+
+    if (units <= 20)
+
+    total_bill = units * 4;
+
+    else if (units <= 30)
+
+    total_bill = units * 8;
+
+    else if (units <= 50)
+
+    total_bill = units * 9;
+
+    else if (units <= 150)
+
+    total_bill = units * 11;
+
+    else if (units <= 250)
+
+    total_bill = units * 13;
+
+    else if (units <= 400)
+
+    total_bill = units * 14;
+
+    else total_bill = units * 15;
+
+    printf("\n\nYour Total Bill Is inr.%f", total_bill);
+
+    getch();
+
+}
